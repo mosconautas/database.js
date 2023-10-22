@@ -1,0 +1,30 @@
+{
+    "name": "@mosconautas/database",
+    "version": "0.0.1",
+    "main": "src/index.ts",
+    "types": "src/index.ts",
+    "keywords": [],
+    "author": "DouglasSerena",
+    "description": "This is a database plugin of mosconautas",
+    "license": "GPL-3.0",
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:mosconautas/database.js.git"
+    },
+    "scripts": {
+        "build": "tsc -p tsconfig.build.json",
+        "test": "node --import tsx --test tests/**/*.test.ts",
+        "test:watch": "node --import tsx --watch --test tests/**/*.test.ts",
+        "lint": "echo \"No linting configured\""
+    },
+    "devDependencies": {
+        "@types/node": "^20.4.4",
+        "type-fest": "^4.8.1",
+        "typescript": "^5.1.6"
+    },
+    "dependencies": {
+        "injection-js": "^2.4.0",
+        "lz-string": "^1.5.0",
+        "reflect-metadata": "^0.1.13"
+    }
+}
